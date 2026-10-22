@@ -13,6 +13,10 @@ header {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
     background-color: white;
     padding: 12px;
     text-align: center;
@@ -20,7 +24,7 @@ nav {
 
 nav a {
     color: #173d60;
-    margin: 0 10px;
+    margin: 0;
     text-decoration: none;
     font-weight: bold;
 }
@@ -70,4 +74,22 @@ footer {
     text-align: center;
     padding: 20px;
     color: #555555;
+}
+* { box-sizing: border-box; }
+body { line-height: 1.5; }
+input, select, textarea, button { font: inherit; }
+input, select, textarea { border: 1px solid #666666; border-radius: 4px; }
+button { background-color: #173d60; color: #ffffff; border: 2px solid #173d60; border-radius: 4px; }
+button:hover { background-color: #102c46; }
+a { color: #173d60; }
+nav a:hover, nav a[aria-current="page"] { text-decoration: underline; }
+:focus-visible { outline: 3px solid #005fcc; outline-offset: 3px; }
+.mensagem-erro { color: #a11919; font-weight: bold; }
+.mensagem-sucesso { color: #176032; font-weight: bold; }
+.lista-servicos { display: flex; flex-wrap: wrap; gap: 18px; }
+.lista-servicos article { flex: 1 1 230px; min-width: 0; margin-bottom: 0; overflow-wrap: anywhere; }
+@media (max-width: 480px) {
+    header { padding: 20px 12px; }
+    h1 { font-size: 1.6rem; }
+    section, article { padding: 16px; }
 }
