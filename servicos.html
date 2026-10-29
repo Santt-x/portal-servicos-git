@@ -33,45 +33,16 @@
                 Veja alguns dos serviços oferecidos.
             </p>
 
-            <div class="lista-servicos">
-            <article>
-
-                <h3>Formatação de computadores</h3>
-
-                <p>
-                    Serviço de formatação e instalação do sistema operacional.
-                </p>
-
-                <a href="contato.html">Solicitar serviço</a>
-
-            </article>
-
-            <article>
-
-                <h3>Manutenção de computadores</h3>
-
-                <p>
-                    Análise e manutenção de computadores e notebooks
-                    com problemas.
-                </p>
-
-                <a href="contato.html">Solicitar serviço</a>
-
-            </article>
-
-            <article>
-
-                <h3>Instalação de programas</h3>
-
-                <p>
-                    Instalação e configuração de programas para o usuário.
-                </p>
-
-                <a href="contato.html">Solicitar serviço</a>
-
-            </article>
-
-            </div>
+            <label for="filtroCategoria">Filtrar serviços por categoria:</label>
+            <select id="filtroCategoria" aria-controls="listaServicos">
+                <option value="todos">Todos os serviços</option>
+                <option value="software">Software</option>
+                <option value="hardware">Hardware</option>
+                <option value="atendimento">Atendimento</option>
+            </select>
+            <p id="mensagemFiltro" aria-live="polite"></p>
+            <div id="listaServicos" class="lista-servicos"></div>
+            <noscript>Ative o JavaScript para visualizar e filtrar o catálogo de serviços.</noscript>
         </section>
 
     </main>
@@ -80,6 +51,7 @@
         <p>Projeto acadêmico - Programação Web</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
