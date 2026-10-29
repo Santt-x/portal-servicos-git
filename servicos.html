@@ -45,6 +45,19 @@
             <noscript>Ative o JavaScript para visualizar e filtrar o catálogo de serviços.</noscript>
         </section>
 
+        <section class="consulta-cep" aria-labelledby="tituloConsultaCep">
+            <h2 id="tituloConsultaCep">Consulta de endereço por CEP</h2>
+            <p id="ajudaCep">Consulte o endereço para planejar seu atendimento. Digite um CEP brasileiro com 8 números, com ou sem hífen.</p>
+            <label for="cep">CEP:</label>
+            <input id="cep" name="cep" type="text" inputmode="numeric" maxlength="9"
+                autocomplete="postal-code" placeholder="00000-000"
+                aria-describedby="ajudaCep statusCep" aria-controls="resultadoCep">
+            <button id="btnBuscarCep" type="button">Buscar endereço</button>
+            <p id="statusCep" role="status" aria-live="polite"></p>
+            <div id="resultadoCep"></div>
+            <noscript>Ative o JavaScript para consultar um CEP.</noscript>
+        </section>
+
     </main>
 
     <footer>
@@ -52,6 +65,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/cep.js"></script>
 </body>
 
 </html>

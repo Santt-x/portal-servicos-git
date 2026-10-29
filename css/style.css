@@ -93,3 +93,8 @@ nav a:hover, nav a[aria-current="page"] { text-decoration: underline; }
     h1 { font-size: 1.6rem; }
     section, article { padding: 16px; }
 }
+
+/* A consulta preserva a identidade visual do portal. */
+#resultadoCep { overflow-wrap: anywhere; }
+#resultadoCep:not(:empty) { background: #f4f6f8; border-left: 4px solid #173d60; padding: 16px; }
+button:disabled { opacity: 0.65; cursor: wait; }
